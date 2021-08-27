@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Father Bank LogIn</title>
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+	<!-- Tailwind css cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
+		integrity="sha512-y6ZMKFUQrn+UUEVoqYe8ApScqbjuhjqzTuwUMEGMDuhS2niI8KA3vhH2LenreqJXQS+iIXVTRL2iaNfJbDNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="flex flex-row justify-center items-center min-h-screen bg-blue-100">
+
+	<main>
+		<section class="px-2">
+			<div class="bg-blue-400 max-w-md mx-auto px-4 sm:px-8 py-16 rounded-lg shadow-2xl">
+				<div class="mb-10" id="login-title">
+					<h1 class="text-3xl sm:text-4xl text-gray-700 text-center font-bold">Bank LogIn Form</h1>
+				</div>
+				<form action="javascript:void(0)" method="POST" id="user-form" class="text-center">
+					<input type="email" name="" id="user-email" placeholder="Your Email"
+						class="border-2 border-gray-600 text-lg w-full mb-5 p-3 focus:outline-none rounded-full">
+					<input type="password" name="" id="user-pass" placeholder="Your Password"
+						class="border-2 border-gray-600 text-lg w-full mb-5 p-3 focus:outline-none rounded-full">
+					<button type="submit" id="submit-btn"
+						class="border-0 transition-all duration-300 focus:outline-none text-xl bg-red-600 hover:bg-red-700 px-8 py-3 font-semibold text-white rounded-full">Submit</button>
+					<p id="para"></p>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<script src="assets/js/login.js"></script>
+</body>
+
+</html>

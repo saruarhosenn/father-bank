@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Father Bank</title>
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+	<!-- Tailwind css cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
+		integrity="sha512-y6ZMKFUQrn+UUEVoqYe8ApScqbjuhjqzTuwUMEGMDuhS2niI8KA3vhH2LenreqJXQS+iIXVTRL2iaNfJbDNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-blue-50">
+
+	<main class="py-14">
+		<!-- Start Balance And Transection Section -->
+		<section class="px-4">
+			<div class="max-w-4xl mx-auto">
+				<div class="sect-title mb-8 text-center">
+					<h1 class="text-3xl sm:text-5xl text-purple-600 font-bold">- My Father <span
+							class="text-pink-500">Bank -</span></h1>
+				</div>
+				<div class="grid sm:grid-cols-3 gap-4 mt-10">
+					<div class="bg-green-500 p-4 text-white rounded-md">
+						<h2 class="text-3xl mb-3 font-semibold">Deposit -</h2>
+						<h3 class="text-2xl">$<span id="total-deposit">00</span></h3>
+					</div>
+					<div class="bg-blue-500 p-4 text-white rounded-md">
+						<h2 class="text-3xl mb-3 font-semibold">Withdraw -</h2>
+						<h3 class="text-2xl">$<span id="total-withdraw">00</span></h3>
+					</div>
+					<div class="bg-pink-500 p-4 text-white rounded-md">
+						<h2 class="text-3xl mb-3 font-semibold">Balance -</h2>
+						<h3 class="text-2xl">$<span id="total-balance">1525</span></h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Balance And Transection Section -->
+
+		<!-- Start Deposit And Withdraw Section -->
+		<section class="px-4">
+			<div class="max-w-4xl mx-auto">
+				<div class="grid sm:grid-cols-2 gap-4 mt-10">
+					<!-- Deposit Field -->
+					<div class="bg-pink-300 p-6 rounded-md">
+						<h2 class="text-3xl mb-5 text-gray-900 font-semibold">Deposit -</h2>
+						<form action="javascript:void(0)" method="POST">
+							<input type="text" name="" id="deposit-field" placeholder="Type Your Balance"
+								class="border-0 text-base text-black focus:outline-none w-full px-4 py-3 rounded-full">
+							<button type="button" id="deposit-btn"
+								class="border-0 bg-blue-600 hover:bg-green-600 transition-all duration-300 text-white px-8 py-2 mt-4 rounded-full text-lg font-medium">Deposit</button>
+						</form>
+					</div>
+					<!-- Withdraw Field -->
+					<div class="bg-blue-300 p-6 rounded-md" id="withdraw-area">
+						<h2 class="text-3xl mb-5 text-gray-900 font-semibold">Withdraw -</h2>
+						<form action="javascript:void(0)" method="POST">
+							<input type="text" name="" id="withdraw-field" placeholder="Type Your Balance"
+								class="border-0 text-base text-black focus:outline-none w-full px-4 py-3 rounded-full">
+							<button type="button" id="withdraw-btn"
+								class="border-0 bg-blue-600 hover:bg-green-600 transition-all duration-300 text-white px-8 py-2 mt-4 rounded-full text-lg font-medium">Withdraw</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Deposit And Withdraw Section -->
+	</main>
+
+	<!-- Start Footer Section -->
+	<footer class="py-5 bg-green-200">
+		<div class="max-w-4xl mx-auto px-4 text-center">
+			<p class="text-xl text-black">Copyright &copy; 2021 Saruar Hosen All Rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- Custom JS -->
+	<script src="assets/js/banking.js"></script>
+</body>
+
+</html>
