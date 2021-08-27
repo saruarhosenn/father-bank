@@ -39,7 +39,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
 	const mainBalance = document.getElementById("total-balance");
 	const mainBalanceAmount = mainBalance.innerText;
 
-	if (withdrawInputAmount > 0 && withdrawInputAmount < mainBalanceAmount) {
+	if (withdrawInputAmount > 0 && withdrawInputAmount <= mainBalanceAmount) {
 		// update withdraw amount
 		const getTotalWithdraw = document.getElementById("total-withdraw");
 		const getTotalWithdrawText = getTotalWithdraw.innerText;
@@ -50,5 +50,8 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
 		// decrease amount from main balance
 		const minus = mainBalanceAmount - withdrawInputAmount;
 		mainBalance.innerText = minus;
+	};
+	if (withdrawInputAmount > mainBalanceAmount) {
+		alert("You do not have enough money in your account.");
 	};
 });
